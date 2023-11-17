@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Keziah V. Bugas">
+    <meta name="section" content="9-Sodium">
+    <meta name="revised" content="11/17/23">
+    <title>FA</title>
+</head>
+
+<body>
+    <ul>
+      <br>
+        <li><a id="link1" href="#div1">First Link</a></li>
+        <li><a id="link2" href="#div2">Second Link</a></li>
+      <br>
+    </ul>
+
+    <div id="div1">Div 1 here</div>
+    <br>
+    <div id="div2">Div 2 here</div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial';
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        float: left;
+        margin-right: 10px;
+    }
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 15px;
+
+    }
+
+    #link1 {
+        background-color: hotpink;
+        color: teal;
+    }
+
+    #link1:visited {
+        color: white;
+    }
+
+    #link1:hover {
+        color: pink;
+        background-color: purple;
+    }
+
+    #link1:active {
+        background-color: blue;
+        color: white;
+    }
+
+    #div1,
+    #div2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+
+    }
+
+    #div1 {
+        top: 60px;
+    }
+
+    #link2 {
+        background-color: black;
+        color: red;
+    }
+
+    #link2:visited {
+        color: white;
+    }
+
+    #link2:hover {
+        color: yellow;
+        background-color: darkred;
+    }
+
+    #link2:active {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    #div2 {
+        top: 180px;
+        border: 1px solid black;
+    }
+
+    #div1:target{
+        background-color: blue;
+        color: white;
+    }
+    #div2:target {
+        background-color: pink;
+        color: white;
+    }
+
+    #div2:target {
+        border: 10px dotted green;
+    }
+</style>
+</html>
